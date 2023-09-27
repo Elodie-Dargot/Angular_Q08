@@ -1,0 +1,8 @@
+<h2>Je suis le composant enfant et mon background est jaune</h2>
+<form #myForm="ngForm" (ngSubmit)="createOnomatopia()">
+    <div>
+        <label for="onomatopia">Onomatopée: </label>
+        <input type="text" id="onomatopia" name="onomatopia" [(ngModel)]="newOnomatopia" #onomatopia="ngModel">
+    </div>
+    <button type="submit">Envoyer</button>
+</form>
